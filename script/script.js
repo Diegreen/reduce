@@ -35,7 +35,7 @@ console.log(totalProductsSize(products));
 function totalProductsSale(array) {
      const filterProductsSale = array.filter((array) => array.sale === true)
      const productDiscount = filterProductsSale.map(function(array) {
-      return array.price
+      return array.price * 0.5
      })  
      const sumOffAllDiscounts = productDiscount.reduce((value1, value2) => value1 + value2)
      console.log(productDiscount)
